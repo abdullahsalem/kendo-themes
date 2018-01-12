@@ -1,14 +1,35 @@
 @include exports('action-buttons/theme') {
-    .k-action-buttons {
-        .k-button {
+    .k-timeselector,
+    .k-upload {
+        .k-action-buttons {
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: flex-end;
+            padding: $padding-y * 2 $padding-x 0;
 
-            &:hover {
-                background-color: $action-button-hovered-bg;
-            }
+            .k-button:first-child { margin-right: $padding-x-sm; }
 
-            &:active {
+            .k-button {
+                border-radius: $border-radius;
                 color: $action-button-text;
-                background-color: $action-button-pressed-bg;
+                text-transform: uppercase;
+                font-weight: bold;
+                flex: 0 1 auto;
+                align-self: center;
+                border: none;
+                box-shadow: none;
+                min-width: auto;
+                padding: 0 $padding-x-sm;
+
+                &:hover {
+                    background-color: $action-button-hovered-bg;
+                }
+
+                &:active {
+                    color: $action-button-text;
+                    background-color: $action-button-pressed-bg;
+                }
             }
         }
     }

@@ -105,11 +105,6 @@
         .k-button {
             box-shadow: none;
 
-            &.k-clear-selected,
-            &.k-upload-selected {
-                padding: 0 $padding-x-sm;
-            }
-
             &.k-upload-button {
                 margin: 0;
                 text-transform: uppercase;
@@ -119,10 +114,6 @@
                 &.k-state-active {
                     background-color: $upload-button-active-bg;
                 }
-            }
-
-            &.k-upload-selected {
-                border-left-width: 0;
             }
 
             &.k-clear-selected {
